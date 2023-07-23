@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> SHREE MODEL SECONDARY SCHOOL</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>  
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="logo/logo.PNG"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">NOTICE / NEWS</a></li>
+                        <li><a href="eca.html">ECA</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>GALLERY</h1>
+        </section>
+
+<!---------------------------------gallery------------------------>
+<div class="full-img" id="fullImgBox">
+    <img src="images/background.jpg" id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+</div>
+<div class="img-gallery">
+    <img src="images/b.jpg" onclick="openFullImg(this.src)">
+    <img src="images/IMG_0553.JPG" onclick="openFullImg(this.src)">
+    <img src="images/IMG_1631.JPG" onclick="openFullImg(this.src)">
+    <img src="images/IMG_0604.jpg" onclick="openFullImg(this.src)">
+    <img src="images/field.JPG" onclick="openFullImg(this.src)">
+    <img src="images/IMG_0562.png" onclick="openFullImg(this.src)">
+    <img src="images/history.jpg" onclick="openFullImg(this.src)">
+    <img src="images/library.jpg" onclick="openFullImg(this.src)">
+    <img src="images/Canteen - 1.PNG" onclick="openFullImg(this.src)">
+    <img src="images/1.JPG" onclick="openFullImg(this.src)">
+    <img src="images/3.JPG" onclick="openFullImg(this.src)">
+    <img src="images/4.JPG" onclick="openFullImg(this.src)">
+    <img src="images/5.JPG" onclick="openFullImg(this.src)">
+    <img src="images/6.JPG" onclick="openFullImg(this.src)">
+    <img src="images/7.JPG" onclick="openFullImg(this.src)">
+    <img src="images/8.JPG" onclick="openFullImg(this.src)">
+    <img src="images/9.JPG" onclick="openFullImg(this.src)">
+    <img src="images/10.JPG" onclick="openFullImg(this.src)">
+    <img src="images/11.JPG" onclick="openFullImg(this.src)">
+    <img src="images/12.jpg" onclick="openFullImg(this.src)">
+    <img src="images/13.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p1.jpg" onclick="openFullImg(this.src)">
+
+    <img src="images/p3.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p4.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p5.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p6.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p7.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p8.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p9.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p11.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p12.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p13.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p14.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p16.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p17.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p18.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p19.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p20.jpg" onclick="openFullImg(this.src)">
+    <img src="images/p21.jpg" onclick="openFullImg(this.src)">
+</div>
+
+<script>
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+
+
+
+
+<!-----------------------------footer----------------------->
+
+<section class="footer">
+    <h4>Follow Us On </h4>
+    <div class="icons">
+        <a href="https://www.facebook.com/ssssbhawanipur/" target="_blank">
+        <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/ma.vi_simrabhawanipur/" target="_blank">
+        <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@shreesecondaryshoolsimrabh6481/videos/" target="_blank">
+        <i class="fa fa-youtube"></i>
+        </a>
+    </div>
+    <p><i class="fa fa-copyright"></i> Copyright 2023 Shree Model Secondary School, Simara Bhawanipur | Powered by: <a href="https://www.instagram.com/sussidip/" target="_blank"><i class="fa fa-instagram"></i></a> Sudip Chaudhary</p>
+</section>
+<!-------------------------------JavaScript for Toggle Menu----------------------------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
