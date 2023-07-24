@@ -1,26 +1,23 @@
 <?php
 $name = $_POST['name'];
 $visitor_email= $_POST['email'];
-$subject = $_POST['subject'];
+$number = $_POST['number'];
 $message = $_POST['message'];
-
-$email_from = 'info@gmail.com';
-
-$email_subject = 'New Form Submission'
-
-$email_body = "User Name: $name.\n".
-                "User Email: $visitor_email.\n".
-                  "Subject: $subject.\n".
-                    "User Message: $message.\n";
 
 $to = 'mavisbhawanipur2001@gmail.com';
 
-$headers = "From: $email_from \r\n";
+$subject = 'New Form Submission'
 
-$headers = "Reply-To: $visitor_email \r\n";
+$txt ="Name = ". $name ."\r\n Email = " .$email . "\r\n Message =" .$message . "\r\n Number =" . $number;
 
-mail($to,$email_subject,$email_body,$headers);
 
-header("Location: contact.html");
+$headers = "From: $email_from" . "\r\n";
+
+
+if($email!=NULL){
+  mail($to,$subject,$txt,$headers);
+}
+
+header("Location:contact.html");
 
 ?>
