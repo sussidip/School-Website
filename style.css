@@ -255,85 +255,39 @@ h3{
 }
 
 /*-------------------------------------------------------------------testimonial-------------------------------------------------------------------*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-  }
-  
-  .slider-container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .testimonial-slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  .testimonial {
-    display: none;
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
     text-align: center;
-  }
-  
-  .testimonial.active {
-    display: block;
-  }
-  
-  .author {
-    font-style: italic;
-  }
-  
-  .slider-controls {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .arrow {
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
     cursor: pointer;
-    display: inline-block;
-    font-size: 30px;
-    padding: 5px;
-  }
-  
-  .left-arrow {
-    margin-right: 10px;
-  }
-  
-  .right-arrow {
-    margin-left: 10px;
-  }
-  
-  /* Optional: Add animation to slide testimonials */
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateX(-20%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes slideOut {
-    from {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    to {
-      opacity: 0;
-      transform: translateX(20%);
-    }
-  }
-  
+    display: flex;   
+}
+.testimonial-col img{
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10%;
+}
+.testimonial-col p{
+    padding: 0;
+}
+.testimonial-col h2{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonial-col .fa{
+    color: #f44336;
+}
+
 /*--------------------------------------------------------------call to action--------------------------------------------------------------*/
 .cta{
     margin: 100px auto;
