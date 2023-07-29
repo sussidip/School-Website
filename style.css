@@ -210,6 +210,12 @@ h3{
     bottom: 49%;
     opacity: 1;
 }
+@media(max-width: 700px){
+    .layer:hover h3{
+        bottom: 49%;
+        opacity: 1;
+    }
+}
 /*-----------------------------------------------------------------campus icon ------------------------------------*/
 .fa-university{
     color: #000000;
