@@ -502,7 +502,7 @@ form{
     border-radius: 10px;
 }
 form h3{
-    color: #555;
+    color: rgb(0, 0, 0);
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -522,9 +522,6 @@ form button{
     border: 0;
     outline: none;
     cursor: pointer;
-    width: 150px;
-    margin: 20px auto 0;
-    border-radius: 30px;
 }
 
 /*------------------------------------------------------------------principle-----------------------------------------------------------------*/
