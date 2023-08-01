@@ -108,12 +108,12 @@
 <script>
     function sendEmail(){
         Email.send({
-Host : "smtp.elasticemail.com",
-Username : "username",
-Password : "password",
-To : 'them@website.com',
-From : "you@isp.com",
-Subject : "This is the subject",
+Host : "smtp.gmail.com",
+Username : "mavisbhawanipur2001@gmail.com",
+Password : "mavis!@#321",
+To : 'mavisbhawanipur2001@gmail.com',
+From : document.getElementById(email).value,
+Subject : "New contact form query",
 Body : "And this is the body"
 }).then(
 message => alert(message)
